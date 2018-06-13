@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- To Do -->
+<!-- fix send form/button/input -->
+<!-- responsiveness issues: -->
+<!--        navbar not following internal navigation links-->
+<!--        navbar position: fixed not working-->
+<!--        scrolling is wibbly wobbly  -->
+<!--        form input screws up page and covers placeholder text -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Portfolio for Tom Corbin, web developer, working with javascript, html, and css.">
+    <title>Portfolio - Tom Corbin</title>
+    <script src="https://use.fontawesome.com/44588ed638.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<!-- Add meta items and "<script...fontawesome.com..." to codepen settings--
+<body>
+    <!--  paste below this line until similar note at bottom into codepen-->
+
+    <!-- Container Nav Bar -->
+    <div class="navBar">
+        <div class="centralNavBar">
+            <label for="menuToggle" class="labelToggle">
+                <i id="hamburger" class="fa fa-bars fa-5x"></i>
+            </label>
+            <input type="checkbox" id="menuToggle">
+            <ul id="menu">
+                <li>
+                    <a href="#aboutSection">About</a>
+                </li>
+                <li>
+                    <a href="#portfolioSection">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contactSection">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Container Main -->
+    <div class="main">
+        <div class="sidebars" id="sideLeft">
+        </div>
+        <div class="centralReservation">
+
+            <!-- About Section -->
+            <div>
+                <h1>
+                    <a id="aboutSection" name="about"></a>
+                </h1>
+            </div>
+            <div id="about">
+                <div id="aboutMe">
+                    <h1>Tom Corbin</h1>
+                    <h3> Web developer - JavaScript</h3>
+                    <div class="sectionBreaks" id="aboutBreaks">
+                        <i class="fa fa-code fa-5x"></i>
+                    </div>
+                    <h3> Coder - Father - Learner</h3>
+                </div>
+                <div id="picture">
+                    <img id="imgMe" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1353113/profile/profile-512.jpg?1510159305" alt="My photo">
+                </div>
+            </div>
+
+            <!-- Portfolio Section -->
+            <div>
+                <h1>
+                    <a name="portfolioSection"></a>Portfolio</h1>
+            </div>
+            <div id="portfolio">
+                <div class="sectionBreaks">
+                    <i class="fa fa-code fa-5x"></i>
+                </div>
+                <div id="portfolioPorts">
+                    <div class="ports">
+                        <h5>SiBot is a Pale Reflection of Life</h5>
+                        <a href="https://codepen.io/nicedrop/full/RMxEEx/" target="_blank">
+                            <img src="https://raw.githubusercontent.com/NiceDrop/portfolio/master/pics/simonpalereflection_sq.png" alt="Project Link">
+                        </a>
+                    </div>
+                    <div class="ports">
+                        <h5>Lazy Robot and Humans</h5>
+                        <a href="https://codepen.io/nicedrop/full/Yawqzb/" target="_blank">
+                            <img src="https://raw.githubusercontent.com/NiceDrop/portfolio/master/pics/lazyrobot_sq.png" alt="Project Link">
+                        </a>
+                    </div>
+                    <div class="ports">
+                        <h5>No Sad Tomatoes</h5>
+                        <a href="https://codepen.io/nicedrop/full/YebPvj/" target="_blank">
+                            <img src="https://raw.githubusercontent.com/NiceDrop/portfolio/master/pics/nosadtomatoespomo_sq.png" alt="Project Link">
+                        </a>
+                    </div>
+                    <div class="ports">
+                        <h5>Does !compute for Robots™</h5>
+                        <a href="https://codepen.io/nicedrop/full/jZGGqR/" target="_blank">
+                            <img src="https://raw.githubusercontent.com/NiceDrop/portfolio/master/pics/notcomputerobots_sq.png" alt="Project Link">
+                        </a>
+                    </div>
+                    <div class="ports">
+                        <h5>Meat Quotes from Random Folks</h5>
+                        <a href="https://codepen.io/nicedrop/full/wPQGmB/" target="_blank">
+                            <img src="https://raw.githubusercontent.com/NiceDrop/portfolio/master/pics/meatquotes_sq.png" alt="Project Link">
+                        </a>
+                    </div>
+                    <div class="ports">
+                        <h5>Who Twitches the Twitchers?</h5>
+                        <a href="https://codepen.io/nicedrop/full/BYBVer/" target="_blank">
+                            <img src="https://raw.githubusercontent.com/NiceDrop/portfolio/master/pics/twitchers_sq.png" alt="Project Link">
+                        </a>
+                    </div>
+                    <div class="ports">
+                        <h5>Lobsters: Wikipedia Viewer</h5>
+                        <a href="https://codepen.io/nicedrop/full/QabqvP/" target="_blank">
+                            <img src="https://raw.githubusercontent.com/NiceDrop/portfolio/master/pics/lobsterswikiviewer_sq.png" alt="Project Link">
+                        </a>
+                    </div>
+                    <div class="ports">
+                        <h5>The Weather is Out There</h5>
+                        <a href="https://codepen.io/nicedrop/full/YEopYX/" target="_blank">
+                            <img src="https://raw.githubusercontent.com/NiceDrop/portfolio/master/pics/theweatherisoutthere_sq.png" alt="Project Link">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Contact Section-->
+            <h1>
+                <a id="contactSection" name="contactSection"></a>Contact Me</h1>
+            <div class="sectionBreaks">
+                <i class="fa fa-code fa-5x"></i>
+            </div>
+            <div id="contact">
+                <div id="chitchat">
+                    <h3>If you drop me a line...
+                        <br>nothing will happen until I make this area live. But I am around the Interweb at the links below.
+                        <br>
+                        <br>Cheers,
+                        <br>Tom</h3>
+                </div>
+                <div id="form">
+                    <form action="#" method="post">
+                    <!-- <form action="mailto:monkeycatrobot@gmail.com" method="post" enctype="text/plain"> -->
+                        <div>
+                            <input id="yourName" name="yourName" type="text" required>
+                            <label for="yourName">your name</label>
+                        </div>
+                        <div>
+                            <input type="tel" required id="yourTel" name="yourTel">
+                            <label for="yourTel">phone</label>
+                        </div>
+                        <div>
+                            <input type="email" required id="yourEmail" name="yourEmail">
+                            <label for="yourEmail">email</label>
+                        </div>
+                        <div>
+                            <textarea id="yourMessage" required></textarea>
+                            <label for="yourMessage">send a message</label>
+                            <!--make sure there is no whitespace between <textarea></textarea>-->
+                        </div>
+                        <div>
+                            <button type="reset" class="button">Send</button>
+                            <!-- to enable, change to type="submit" -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="sidebars" id="sideRight">
+        </div>
+    </div>
+
+    <!-- Container Penultimate -->
+    <div class="penultimate">
+        <div class="centralPenultimate">
+            <div id="aboutPage">
+                <h3>About this page</h3>
+                <h4>Turning magic into knowledge</h4>
+                <h5 id="madeWith">Made with
+                    <i class="fa fa-beer"></i> and
+                    <i class="fa fa-scissors"></i>
+                    <br>by Tom Corbin.</h5>
+            </div>
+            <div id="interweb">
+                <h3>Around the Interweb</h3>
+                <ul id="webIcons">
+                    <li>
+                        <a target="_blank" href="https://codepen.io/nicedrop/">
+                            <i class="fa fa-codepen fa-5x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/NiceDrop">
+                            <i class="fa fa-github fa-5x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/nice_drop?lang=en">
+                            <i class="fa fa-twitter fa-5x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- Container Footer -->
+    <div class="footer">
+        <h5>The small print is small.</h5>
+    </div>
+
+    <!--  paste above line into codepen-->
+    <script type="text/javascript" src="/js/script.js"></script>
+
+</body>
+
+</html>
