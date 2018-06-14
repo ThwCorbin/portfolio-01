@@ -12,6 +12,7 @@ const app = express();
 
 const publicPath = path.join(__dirname, "../public");
 const port = process.env.PORT || 3000;
+// Heroku generates the port or defaults to 3000
 
 app.use(express.static(publicPath));
 
