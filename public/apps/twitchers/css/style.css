@@ -1,0 +1,140 @@
+/*General*/
+@import url("https://fonts.googleapis.com/css?family=Orbitron|Poppins");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  background: rgb(250, 213, 248);
+  color: #4b367c;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}
+
+#header {
+  font-size: 1.5em;
+  font-family: "Orbitron", sans-serif;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 800px;
+  padding: 10px 10px;
+  border: solid;
+  border-radius: 5%;
+}
+
+.channel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+h3 {
+  margin: 0;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.live {
+  padding: 0px 10px;
+  color: rgb(234, 0, 255);
+}
+
+.name {
+  padding: 0px 10px;
+  font-size: 1.25em;
+}
+
+.details {
+  margin-left: auto;
+  margin-right: 10px;
+  text-align: center;
+  padding: 0;
+  max-width: 300px;
+  font-family: "Orbitron", sans-serif;
+  color: #c487e2;
+}
+
+svg {
+  color: rgb(5, 238, 149);
+}
+
+#eye_slash {
+  color: rgb(248, 7, 139);
+}
+
+#footer {
+  font-size: 1.5em;
+  color: #c487e2;
+}
+
+@media all and (max-width: 700px) {
+  #mainContainer {
+    width: 400px;
+    padding: 0;
+    border-radius: 10px;
+  }
+  .channel {
+    flex-direction: column;
+    padding: 5px 10px;
+    border-bottom: 2px solid #4b367c;
+  }
+  .details {
+    margin: 0;
+    padding: 0 10px;
+  }
+  img {
+    border-radius: 15%;
+  }
+  #header,
+  #footer {
+    max-width: 350px;
+    text-align: center;
+  }
+}
+
+
+@media all and (max-width: 325px) {
+  #mainContainer {
+    max-width: 315px;
+    padding: 0;
+    border-top: solid;
+    border-bottom: solid;
+    border-right: none;
+    border-left: none;
+    border-radius: 0px;
+  }
+  .channel {
+    flex-direction: column;
+    padding: 5px 10px;
+    border-bottom: 2px solid #4b367c;
+  }
+  .details {
+    margin: 0;
+    padding: 0 10px;
+  }
+  img {
+    border-radius: 15%;
+  }
+  #header,
+  #footer {
+    max-width: 315px;
+    text-align: center;
+  }
+}
